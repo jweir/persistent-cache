@@ -3,7 +3,7 @@ var _elm_lang$persistent_cache$Native_LocalStorage = function() {
 
 if (!localStorage || !localStorage.getItem || !localStorage.setItem)
 {
-	function disabled()
+	var disabled = function()
 	{
 		return _elm_lang$core$Native_Scheduler.fail({ ctor: 'Disabled' });
 	}
